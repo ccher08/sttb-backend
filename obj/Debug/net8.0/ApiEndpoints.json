@@ -1,0 +1,530 @@
+[
+  {
+    "ContainingType": "SttbApi.Controllers.AuthController",
+    "Method": "Login",
+    "RelativePath": "api/auth/login",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "dto",
+        "Type": "SttbApi.Models.Dto.LoginDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BeritaController",
+    "Method": "GetAll",
+    "RelativePath": "api/berita",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BeritaController",
+    "Method": "Create",
+    "RelativePath": "api/berita",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "berita",
+        "Type": "SttbApi.Models.Berita",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BeritaController",
+    "Method": "Get",
+    "RelativePath": "api/berita/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BeritaController",
+    "Method": "Update",
+    "RelativePath": "api/berita/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "berita",
+        "Type": "SttbApi.Models.Berita",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BeritaController",
+    "Method": "Delete",
+    "RelativePath": "api/berita/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CurriculumGroupController",
+    "Method": "Get",
+    "RelativePath": "api/jenis-matkul",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CurriculumGroupController",
+    "Method": "Create",
+    "RelativePath": "api/jenis-matkul",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "SttbApi.Models.CurriculumGroup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CurriculumGroupController",
+    "Method": "Update",
+    "RelativePath": "api/jenis-matkul",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "SttbApi.Models.CurriculumGroup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CurriculumGroupController",
+    "Method": "Delete",
+    "RelativePath": "api/jenis-matkul/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CompetencyController",
+    "Method": "Get",
+    "RelativePath": "api/kompetensi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CompetencyController",
+    "Method": "Create",
+    "RelativePath": "api/kompetensi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "SttbApi.Models.CompetencyGroup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CompetencyController",
+    "Method": "Update",
+    "RelativePath": "api/kompetensi",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "group",
+        "Type": "SttbApi.Models.CompetencyGroup",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CompetencyController",
+    "Method": "Delete",
+    "RelativePath": "api/kompetensi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CompetencyController",
+    "Method": "GetByProgram",
+    "RelativePath": "api/kompetensi/program/{programId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CourseController",
+    "Method": "Get",
+    "RelativePath": "api/mata-kuliah",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CourseController",
+    "Method": "Create",
+    "RelativePath": "api/mata-kuliah",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "SttbApi.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CourseController",
+    "Method": "Update",
+    "RelativePath": "api/mata-kuliah",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "course",
+        "Type": "SttbApi.Models.Course",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CourseController",
+    "Method": "GetById",
+    "RelativePath": "api/mata-kuliah/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.CourseController",
+    "Method": "Delete",
+    "RelativePath": "api/mata-kuliah/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewAboutController",
+    "Method": "Get",
+    "RelativePath": "api/OverviewAbout",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewAboutController",
+    "Method": "Update",
+    "RelativePath": "api/OverviewAbout",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "about",
+        "Type": "SttbApi.Models.OverviewAbout",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewAboutController",
+    "Method": "Delete",
+    "RelativePath": "api/OverviewAbout/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewAboutController",
+    "Method": "CreateBatch",
+    "RelativePath": "api/OverviewAbout/batch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reqs",
+        "Type": "System.Collections.Generic.List\u00601[[SttbApi.Models.OverviewAbout, SttbApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewAboutController",
+    "Method": "GetByProgramStudi",
+    "RelativePath": "api/OverviewAbout/programstudi/{programStudiId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programStudiId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewRequirementController",
+    "Method": "Get",
+    "RelativePath": "api/OverviewRequirement",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewRequirementController",
+    "Method": "Update",
+    "RelativePath": "api/OverviewRequirement",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "req",
+        "Type": "SttbApi.Models.OverviewRequirement",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewRequirementController",
+    "Method": "Delete",
+    "RelativePath": "api/OverviewRequirement/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewRequirementController",
+    "Method": "CreateBatch",
+    "RelativePath": "api/OverviewRequirement/batch",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "reqs",
+        "Type": "System.Collections.Generic.List\u00601[[SttbApi.Models.OverviewRequirement, SttbApi, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.OverviewRequirementController",
+    "Method": "GetByProgramStudi",
+    "RelativePath": "api/OverviewRequirement/programstudi/{programStudiId}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "programStudiId",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.ProgramStudiController",
+    "Method": "Get",
+    "RelativePath": "api/program-studi",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.ProgramStudiController",
+    "Method": "Create",
+    "RelativePath": "api/program-studi",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "data",
+        "Type": "SttbApi.Models.ProgramStudi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.ProgramStudiController",
+    "Method": "Update",
+    "RelativePath": "api/program-studi/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "data",
+        "Type": "SttbApi.Models.ProgramStudi",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.ProgramStudiController",
+    "Method": "Delete",
+    "RelativePath": "api/program-studi/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "SttbApi.Controllers.ProgramStudiController",
+    "Method": "GetBySlug",
+    "RelativePath": "api/program-studi/{slug}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "slug",
+        "Type": "System.String",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
