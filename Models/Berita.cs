@@ -1,26 +1,19 @@
-﻿using System;
-using System.ComponentModel.DataAnnotations;
-
-namespace SttbApi.Models
+﻿namespace SttbApi.Models
 {
     public class Berita
     {
         public int Id { get; set; }
 
-        [Required]
         public string Title { get; set; }
 
-        public string Content { get; set; }
+        public string Excerpt { get; set; }
 
-        [Required]
+        public string Image { get; set; }
+
+        public string Date { get; set; }
+
         public string Category { get; set; }
 
-        public DateTime? Date { get; set; }
-
-        public string Time { get; set; }
-
-        public string ImageUrl { get; set; }
-
-        public bool IsFeatured { get; set; } = false;
+        public string Author { get; set; }
     }
 }

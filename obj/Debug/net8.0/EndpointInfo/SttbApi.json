@@ -5,6 +5,110 @@
     "version": "1.0"
   },
   "paths": {
+    "/api/Acara": {
+      "get": {
+        "tags": [
+          "Acara"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "Acara"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Acara"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Acara"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Acara"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Acara/{id}": {
+      "put": {
+        "tags": [
+          "Acara"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Acara"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Acara"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Acara"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "Acara"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/auth/login": {
       "post": {
         "tags": [
@@ -867,11 +971,7 @@
   },
   "components": {
     "schemas": {
-      "Berita": {
-        "required": [
-          "category",
-          "title"
-        ],
+      "Acara": {
         "type": "object",
         "properties": {
           "id": {
@@ -879,32 +979,50 @@
             "format": "int32"
           },
           "title": {
-            "minLength": 1,
-            "type": "string"
-          },
-          "content": {
             "type": "string",
             "nullable": true
           },
-          "category": {
-            "minLength": 1,
-            "type": "string"
-          },
           "date": {
             "type": "string",
-            "format": "date-time",
             "nullable": true
           },
           "time": {
             "type": "string",
             "nullable": true
+          }
+        },
+        "additionalProperties": false
+      },
+      "Berita": {
+        "type": "object",
+        "properties": {
+          "id": {
+            "type": "integer",
+            "format": "int32"
           },
-          "imageUrl": {
+          "title": {
             "type": "string",
             "nullable": true
           },
-          "isFeatured": {
-            "type": "boolean"
+          "excerpt": {
+            "type": "string",
+            "nullable": true
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          },
+          "date": {
+            "type": "string",
+            "nullable": true
+          },
+          "category": {
+            "type": "string",
+            "nullable": true
+          },
+          "author": {
+            "type": "string",
+            "nullable": true
           }
         },
         "additionalProperties": false

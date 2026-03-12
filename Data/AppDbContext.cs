@@ -26,7 +26,9 @@ namespace SttbApi.Data
 
         public DbSet<CompetencyItem> CompetencyItems { get; set; }
 
-        public DbSet<Berita> Beritas { get; set; }
+        public DbSet<Berita> Berita { get; set; }
+
+        public DbSet<Acara> Acara { get; set; }
 
         public DbSet<Admin> Admins { get; set; }
     }

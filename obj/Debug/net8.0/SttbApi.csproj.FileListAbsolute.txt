@@ -140,3 +140,4 @@ D:\INTERN\Training Fullstack\FinalProject1\sttb-backend\SttbApi\SttbApi\bin\Debu
 D:\INTERN\Training Fullstack\FinalProject1\sttb-backend\SttbApi\SttbApi\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 D:\INTERN\Training Fullstack\FinalProject1\sttb-backend\SttbApi\SttbApi\bin\Debug\net8.0\Microsoft.AspNetCore.Authentication.JwtBearer.dll
 D:\INTERN\Training Fullstack\FinalProject1\sttb-backend\SttbApi\SttbApi\bin\Debug\net8.0\BCrypt.Net-Next.dll
+D:\INTERN\Training Fullstack\FinalProject1\sttb-backend\SttbApi\SttbApi\obj\Debug\net8.0\SttbApi.sourcelink.json

@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("SttbApi")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+eaa9d98e27f644ac18e078d2d6cd49ef766c835f")]
 [assembly: System.Reflection.AssemblyProductAttribute("SttbApi")]
 [assembly: System.Reflection.AssemblyTitleAttribute("SttbApi")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

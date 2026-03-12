@@ -17,7 +17,7 @@ public class BeritaController : ControllerBase
     [HttpGet]
     public async Task<IActionResult> GetAll()
     {
-        var data = await _context.Beritas
+        var data = await _context.Berita
             .OrderByDescending(b => b.Date)
             .ToListAsync();
         return Ok(data);
@@ -26,7 +26,7 @@ public class BeritaController : ControllerBase
     [HttpGet("{id}")]
     public async Task<IActionResult> Get(int id)
     {
-        var data = await _context.Beritas.FindAsync(id);
+        var data = await _context.Berita.FindAsync(id);
         if (data == null) return NotFound();
         return Ok(data);
     }
@@ -34,7 +34,7 @@ public class BeritaController : ControllerBase
     [HttpPost]
     public async Task<IActionResult> Create(Berita berita)
     {
-        _context.Beritas.Add(berita);
+        _context.Berita.Add(berita);
         await _context.SaveChangesAsync();
         return Ok(berita);
     }
@@ -42,28 +42,28 @@ public class BeritaController : ControllerBase
     [HttpPut("{id}")]
     public async Task<IActionResult> Update(int id, Berita berita)
     {
-        var existing = await _context.Beritas.FindAsync(id);
+        var existing = await _context.Berita.FindAsync(id);
         if (existing == null) return NotFound();
 
         existing.Title = berita.Title;
-        existing.Content = berita.Content;
-        existing.Category = berita.Category;
+        existing.Excerpt = berita.Excerpt;
+        existing.Image = berita.Image;
         existing.Date = berita.Date;
-        existing.Time = berita.Time;
-        existing.ImageUrl = berita.ImageUrl;
-        existing.IsFeatured = berita.IsFeatured;
+        existing.Category = berita.Category;
+        existing.Author = berita.Author;
 
         await _context.SaveChangesAsync();
+
         return Ok(existing);
     }
 
     [HttpDelete("{id}")]
     public async Task<IActionResult> Delete(int id)
     {
-        var data = await _context.Beritas.FindAsync(id);
+        var data = await _context.Berita.FindAsync(id);
         if (data == null) return NotFound();
 
-        _context.Beritas.Remove(data);
+        _context.Berita.Remove(data);
         await _context.SaveChangesAsync();
         return Ok();
     }
