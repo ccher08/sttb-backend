@@ -72,6 +72,54 @@ namespace SttbApi.Migrations
                     b.ToTable("Admins");
                 });
 
+            modelBuilder.Entity("SttbApi.Models.AdmissionItem", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AdmissionPackageId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<decimal>("Price")
+                        .HasPrecision(18, 2)
+                        .HasColumnType("decimal(18,2)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AdmissionPackageId");
+
+                    b.ToTable("AdmissionItems");
+                });
+
+            modelBuilder.Entity("SttbApi.Models.AdmissionPackage", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("ProgramStudiId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Year")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("ProgramStudiId");
+
+                    b.ToTable("AdmissionPackages");
+                });
+
             modelBuilder.Entity("SttbApi.Models.Berita", b =>
                 {
                     b.Property<int>("Id")
@@ -200,6 +248,56 @@ namespace SttbApi.Migrations
                     b.ToTable("CurriculumGroups");
                 });
 
+            modelBuilder.Entity("SttbApi.Models.Library", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Author")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Category")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("CoverUrl")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("FileUrl")
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Isbn")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<DateTime>("ReleaseDate")
+                        .HasColumnType("datetime2");
+
+                    b.Property<string>("Slug")
+                        .HasColumnType("nvarchar(450)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("Slug")
+                        .IsUnique()
+                        .HasFilter("[Slug] IS NOT NULL");
+
+                    b.ToTable("Libraries");
+                });
+
             modelBuilder.Entity("SttbApi.Models.MataKuliah", b =>
                 {
                     b.Property<int>("Id")
@@ -320,6 +418,28 @@ namespace SttbApi.Migrations
                     b.ToTable("ProgramStudi");
                 });
 
+            modelBuilder.Entity("SttbApi.Models.AdmissionItem", b =>
+                {
+                    b.HasOne("SttbApi.Models.AdmissionPackage", "AdmissionPackage")
+                        .WithMany("AdmissionItems")
+                        .HasForeignKey("AdmissionPackageId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("AdmissionPackage");
+                });
+
+            modelBuilder.Entity("SttbApi.Models.AdmissionPackage", b =>
+                {
+                    b.HasOne("SttbApi.Models.ProgramStudi", "ProgramStudi")
+                        .WithMany()
+                        .HasForeignKey("ProgramStudiId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("ProgramStudi");
+                });
+
             modelBuilder.Entity("SttbApi.Models.CompetencyGroup", b =>
                 {
                     b.HasOne("SttbApi.Models.ProgramStudi", "ProgramStudi")
@@ -395,6 +515,11 @@ namespace SttbApi.Migrations
                         .IsRequired();
 
                     b.Navigation("ProgramStudi");
+                });
+
+            modelBuilder.Entity("SttbApi.Models.AdmissionPackage", b =>
+                {
+                    b.Navigation("AdmissionItems");
                 });
 
             modelBuilder.Entity("SttbApi.Models.CompetencyGroup", b =>
