@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using SttbApi.Data;
 
@@ -11,9 +12,11 @@ using SttbApi.Data;
 namespace SttbApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20260413131734_MediaSetup")]
+    partial class MediaSetup
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -196,41 +199,6 @@ namespace SttbApi.Migrations
                     b.ToTable("Berita");
                 });
 
-            modelBuilder.Entity("SttbApi.Models.Bulletin", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MediaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("PdfUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("TitleDescription")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MediaId")
-                        .IsUnique();
-
-                    b.ToTable("Bulletin");
-                });
-
             modelBuilder.Entity("SttbApi.Models.Category", b =>
                 {
                     b.Property<int>("Id")
@@ -339,29 +307,6 @@ namespace SttbApi.Migrations
                     b.ToTable("CurriculumGroups");
                 });
 
-            modelBuilder.Entity("SttbApi.Models.Journal", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("FileUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MediaId")
-                        .HasColumnType("int");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MediaId")
-                        .IsUnique();
-
-                    b.ToTable("Journal");
-                });
-
             modelBuilder.Entity("SttbApi.Models.Library", b =>
                 {
                     b.Property<int>("Id")
@@ -457,7 +402,7 @@ namespace SttbApi.Migrations
 
                     b.Property<string>("Slug")
                         .IsRequired()
-                        .HasColumnType("nvarchar(450)");
+                        .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Title")
                         .IsRequired()
@@ -471,53 +416,7 @@ namespace SttbApi.Migrations
 
                     b.HasIndex("CategoryId");
 
-                    b.HasIndex("Slug")
-                        .IsUnique();
-
                     b.ToTable("Media");
-                });
-
-            modelBuilder.Entity("SttbApi.Models.Monograph", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Author")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("DescriptionTitle")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ISBN")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Image")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MediaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Synopsis")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Writer")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MediaId")
-                        .IsUnique();
-
-                    b.ToTable("Monograph");
                 });
 
             modelBuilder.Entity("SttbApi.Models.OverviewAbout", b =>
@@ -615,37 +514,6 @@ namespace SttbApi.Migrations
                     b.ToTable("ProgramStudi");
                 });
 
-            modelBuilder.Entity("SttbApi.Models.Video", b =>
-                {
-                    b.Property<int>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int");
-
-                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
-
-                    b.Property<string>("Description")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<int>("MediaId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("Theme")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("YoutubeUrl")
-                        .IsRequired()
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("MediaId")
-                        .IsUnique();
-
-                    b.ToTable("Video");
-                });
-
             modelBuilder.Entity("SttbApi.Models.AdmissionItem", b =>
                 {
                     b.HasOne("SttbApi.Models.AdmissionPackage", "AdmissionPackage")
@@ -673,17 +541,6 @@ namespace SttbApi.Migrations
                     b.HasOne("SttbApi.Models.Media", "Media")
                         .WithOne("Article")
                         .HasForeignKey("SttbApi.Models.Article", "MediaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Media");
-                });
-
-            modelBuilder.Entity("SttbApi.Models.Bulletin", b =>
-                {
-                    b.HasOne("SttbApi.Models.Media", "Media")
-                        .WithOne("Bulletin")
-                        .HasForeignKey("SttbApi.Models.Bulletin", "MediaId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -734,17 +591,6 @@ namespace SttbApi.Migrations
                     b.Navigation("ProgramStudi");
                 });
 
-            modelBuilder.Entity("SttbApi.Models.Journal", b =>
-                {
-                    b.HasOne("SttbApi.Models.Media", "Media")
-                        .WithOne("Journal")
-                        .HasForeignKey("SttbApi.Models.Journal", "MediaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Media");
-                });
-
             modelBuilder.Entity("SttbApi.Models.MataKuliah", b =>
                 {
                     b.HasOne("SttbApi.Models.ProgramStudi", "ProgramStudi")
@@ -767,17 +613,6 @@ namespace SttbApi.Migrations
                     b.Navigation("Category");
                 });
 
-            modelBuilder.Entity("SttbApi.Models.Monograph", b =>
-                {
-                    b.HasOne("SttbApi.Models.Media", "Media")
-                        .WithOne("Monograph")
-                        .HasForeignKey("SttbApi.Models.Monograph", "MediaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Media");
-                });
-
             modelBuilder.Entity("SttbApi.Models.OverviewAbout", b =>
                 {
                     b.HasOne("SttbApi.Models.ProgramStudi", "ProgramStudi")
@@ -798,17 +633,6 @@ namespace SttbApi.Migrations
                         .IsRequired();
 
                     b.Navigation("ProgramStudi");
-                });
-
-            modelBuilder.Entity("SttbApi.Models.Video", b =>
-                {
-                    b.HasOne("SttbApi.Models.Media", "Media")
-                        .WithOne("Video")
-                        .HasForeignKey("SttbApi.Models.Video", "MediaId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Media");
                 });
 
             modelBuilder.Entity("SttbApi.Models.AdmissionPackage", b =>
@@ -834,18 +658,6 @@ namespace SttbApi.Migrations
             modelBuilder.Entity("SttbApi.Models.Media", b =>
                 {
                     b.Navigation("Article")
-                        .IsRequired();
-
-                    b.Navigation("Bulletin")
-                        .IsRequired();
-
-                    b.Navigation("Journal")
-                        .IsRequired();
-
-                    b.Navigation("Monograph")
-                        .IsRequired();
-
-                    b.Navigation("Video")
                         .IsRequired();
                 });
 

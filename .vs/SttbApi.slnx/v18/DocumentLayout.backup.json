@@ -3,32 +3,44 @@
   "WorkspaceRootPath": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\libraryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\libraryrequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:controllers\\mediacontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\controllers\\acaracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:controllers\\acaracontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:controllers\\librarycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\bulletin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\bulletin.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\library.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\category.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\mediarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\mediarequest.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\programstudi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\programstudi.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\controllers\\programstudicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:controllers\\programstudicontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\models\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:models\\media.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|d:\\intern\\training fullstack\\finalproject1\\sttb-backend\\sttbapi\\sttbapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C1FD8461-3803-738C-E108-0C0F4AF3C3F4}|SttbApi.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -38,43 +50,31 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "ProgramStudi.cs",
               "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\ProgramStudi.cs",
               "RelativeDocumentMoniker": "Models\\ProgramStudi.cs",
               "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\ProgramStudi.cs",
               "RelativeToolTip": "Models\\ProgramStudi.cs",
-              "ViewState": "AgIAABwAAAAAAAAAAAAcwCQAAAArAAAAAAAAAA==",
+              "ViewState": "AgIAABwAAAAAAAAAAAA2wCQAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-10T16:31:02.444Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "ProgramStudiController.cs",
-              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\ProgramStudiController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ProgramStudiController.cs",
-              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\ProgramStudiController.cs",
-              "RelativeToolTip": "Controllers\\ProgramStudiController.cs",
-              "ViewState": "AgIAADkAAAAAAAAAAAA7wCIAAAAUAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-10T16:40:17.513Z",
-              "IsPinned": true
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "AppDbContext.cs",
               "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Data\\AppDbContext.cs",
               "RelativeDocumentMoniker": "Data\\AppDbContext.cs",
               "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Data\\AppDbContext.cs",
               "RelativeToolTip": "Data\\AppDbContext.cs",
-              "ViewState": "AgIAABsAAAAAAAAAAAAIwDgAAAAnAAAAAAAAAA==",
+              "ViewState": "AgIAAFUAAAAAAAAAAAAowG0AAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-11T15:14:39.51Z",
               "IsPinned": true,
@@ -82,46 +82,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Library.cs",
-              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Library.cs",
-              "RelativeDocumentMoniker": "Models\\Library.cs",
-              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Library.cs",
-              "RelativeToolTip": "Models\\Library.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAQwBoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T04:59:54.455Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "LibraryRequest.cs",
-              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\LibraryRequest.cs",
-              "RelativeDocumentMoniker": "Models\\LibraryRequest.cs",
-              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\LibraryRequest.cs",
-              "RelativeToolTip": "Models\\LibraryRequest.cs",
-              "ViewState": "AgIAAAEAAAAAAAAAAAAAwA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T04:59:38.099Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "LibraryController.cs",
-              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\LibraryController.cs",
-              "RelativeDocumentMoniker": "Controllers\\LibraryController.cs",
-              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\LibraryController.cs",
-              "RelativeToolTip": "Controllers\\LibraryController.cs",
-              "ViewState": "AgIAAKQAAAAAAAAAAAAAwLAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-04-13T04:58:12.027Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 9,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Program.cs",
               "RelativeDocumentMoniker": "Program.cs",
@@ -130,6 +91,97 @@
               "ViewState": "AgIAAEEAAAAAAAAAAAAawEoAAAAVAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-04-08T10:24:00.048Z",
+              "IsPinned": true
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Bulletin.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Bulletin.cs",
+              "RelativeDocumentMoniker": "Models\\Bulletin.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Bulletin.cs",
+              "RelativeToolTip": "Models\\Bulletin.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T12:43:17.691Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CategoryController.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\CategoryController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\CategoryController.cs",
+              "RelativeToolTip": "Controllers\\CategoryController.cs",
+              "ViewState": "AgIAACMAAAAAAAAAAAA3wGkAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-14T12:29:55.769Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "AcaraController.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\AcaraController.cs",
+              "RelativeDocumentMoniker": "Controllers\\AcaraController.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\AcaraController.cs",
+              "RelativeToolTip": "Controllers\\AcaraController.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAgwA8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T16:19:47.209Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MediaController.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\MediaController.cs",
+              "RelativeDocumentMoniker": "Controllers\\MediaController.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Controllers\\MediaController.cs",
+              "RelativeToolTip": "Controllers\\MediaController.cs",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAwwCsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T16:12:11.475Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "MediaRequest.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\MediaRequest.cs",
+              "RelativeDocumentMoniker": "Models\\MediaRequest.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\MediaRequest.cs",
+              "RelativeToolTip": "Models\\MediaRequest.cs",
+              "ViewState": "AgIAABkAAAAAAAAAAAAswAsAAAALAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T14:06:48.365Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Category.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Category.cs",
+              "RelativeDocumentMoniker": "Models\\Category.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Category.cs",
+              "RelativeToolTip": "Models\\Category.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T13:12:37.493Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "Media.cs",
+              "DocumentMoniker": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Media.cs",
+              "RelativeDocumentMoniker": "Models\\Media.cs",
+              "ToolTip": "D:\\INTERN\\Training Fullstack\\FinalProject1\\sttb-backend\\SttbApi\\SttbApi\\Models\\Media.cs",
+              "RelativeToolTip": "Models\\Media.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAQwBkAAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-04-13T13:11:47.412Z",
               "EditorCaption": ""
             }
           ]
